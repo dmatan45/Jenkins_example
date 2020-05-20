@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        git 'https://github.com/dmatan45/MySoftware/click.py.git'
+        git 'https://github.com/dmatan45/MySoftware.git'
       }
     }
 
     stage('test') {
       steps {
-        echo 'testind'
+        python 'click.py'
       }
     }
 
