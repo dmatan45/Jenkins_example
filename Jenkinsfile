@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        python '1.py'
+        git 'https://github.com/dmatan45/MySoftware/click.py.git'
       }
     }
 
